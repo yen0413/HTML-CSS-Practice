@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audi版面練習</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap-4.2.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.14.0-web/css/all.css">
+
+    <style>
+        .row {
+            /* width: 1200px; */
+            /* display: flex; */
+            /* justify-content: space-between; */
+            /* margin: 0 auto; */
+            /* margin: 0 -20px; */
+        }
+
+        .row div {
+            padding: 3px;
+        }
+
+        .logo {
+            position: absolute;
+            top: 15px;
+            right: 0;
+        }
+
+        .nav-left {
+            display: flex;
+            width: 50%;
+            justify-content: space-evenly;
+        }
+
+        a,
+        .footer-link a,
+        .px-15 a,
+        .img-info a,
+        .footer-end-left a,
+        .footer-end-social a {
+            color: black;
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        span {
+            margin: 10px;
+        }
+
+        p {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        .article {
+            /* width: 1200px; */
+            margin: 0 auto;
+            font-size: 150%;
+            padding: 20px;
+            font-family: 'Noto Sans TC';
+
+        }
+
+        .article-info {
+            /* width: 1200px; */
+            margin: 0 auto;
+            font-size: 150%;
+            /* padding: 20px; */
+            font-family: 'Noto Sans TC';
+        }
+
+        .article-info p {
+            /* width: 1200px; */
+            font-size: 70%;
+            font-family: 'Noto Sans TC'
+        }
+
+
+        .px-15 {
+            padding-left: 15px;
+            padding-right: 15px;
+            margin: 20px 0px;
+        }
+
+        .link-testdrive {
+            border: 1px solid;
+            height: 10%;
+            margin-bottom: 50px;
+            padding: 15px 42px;
+        }
+
+        .img-main {
+            margin: auto;
+            /* width: 90%; */
+        }
+
+        .img-main img {
+            width: 100%;
+            height: auto;
+        }
+
+        .img-info img {
+            width: 100%;
+            /* height: 230px; */
+            /* padding: 3px; */
+        }
+
+        .img-info p,
+        a {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-weight: 500;
+        }
+
+        .article p {
+            font-family: 'Noto Sans TC';
+            font-weight: bold;
+        }
+
+        .article h1 {
+            font-family: 'Noto Sans TC';
+            font-size: 250%;
+            font-weight: bold;
+        }
+
+        .img-space {
+            /* display: flex;
+            justify-content: space-evenly; */
+        }
+
+        .footer {
+            background-color: #E0E0E0;
+        }
+
+        .footer-TextRange {
+            /* width: 1200px; */
+
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            padding-top: 20px;
+        }
+
+        .footer-end {
+            background-color: #5B5B5B;
+            /* height: 150px; */
+        }
+
+        .footer-end-range {
+            /* width: 1200px; */
+            /* display: flex;
+            justify-content: space-between; */
+            /* margin: auto; */
+            border-bottom: solid 1px gray;
+        }
+
+        .footer-icon {
+            font-size: 200%;
+        }
+
+        .footer-link p {
+            font-size: 80%;
+        }
+
+        .footer-end-copyright {
+            /* width: 1200px; */
+            /* margin: 20px auto; */
+        }
+
+        .footer-end-copyright p {
+            color: gray;
+            margin-bottom: 0;
+            line-height: 2.5rem;
+        }
+
+        .footer-end-range {
+            /* padding: 20px; */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container navbar navbar-expand-lg navbar-light">
+            <div class="row">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">A1 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">A3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">A5</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">A6</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">A7</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">A8</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Q2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Q3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Q5</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Q7</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">e-tron</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">嚴選中古車</a>
+                        </li>
+                    </ul>
+                </div>
+                <img class="logo" src="./image/logo.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <main>
+        <div class="img-main">
+            <img src="image/Main photo1920x600.jpg" alt="">
+        </div>
+        <div class="container">
+
+            <div class="row">
+                <div class="article col-12">
+                    <h1>最新購車方案</h1>
+                    <p>適用日期: 2020 年 8 月 1 日～2020 年 8 月 31 日</p>
+                </div>
+            </div>
+            <div class="row px-15">
+
+                <a class="link-testdrive" href="#">預約試駕</a> <!-- TODO 按鈕部分只有中央待修正  -->
+
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="img-info col-12 col-md-4">
+                    <!--col-12 col-md-4-->
+                    <img src="./image/A1 Sportback.jpg" alt="">
+                    <h2>A1 Sportback</h2>
+                    <p>指定車型享有：<br>
+                        >超低頭款<br>
+                        >59+1 期低月付附尾款財務方案<br>
+                        >五年原廠保固</p>
+                    <br>
+                    <a href="#">預約試駕 ></a>
+                </div>
+                <div class="img-info col-12 col-md-4">
+                    <img src="./image/Q2.jpg" alt="">
+                    <h2>Q2</h2>
+                    <p>指定車型享有:<br>
+                        > 6 年 0 利率低月付附尾款財務方案</br>
+                        > 再享第 6 年延長保固 (限既有 Audi 車主享有)</br>
+                        > 五年原廠保固</p>
+                    <br>
+                    <a href="#">預約試駕 ></a>
+                </div>
+                <div class="img-info col-12 col-md-4">
+                    <img src="./image/A3 Sportback.jpg" alt="">
+                    <h2>A3 Sportback</h2>
+                    <p>指定車型享有:</br>
+                        > 6 年 0 利率低月付附尾款財務方案</br>
+                        > 再享第 6 年延長保固 (限既有 Audi 車主享有)</br>
+                        > 五年原廠保固</p>
+                    <br>
+                    <a href="#">預約試駕 ></a>
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="img-info col-12 col-md-4">
+                    <img src="./image/Q3.jpg" alt="">
+                    <h2>Q3</h2>
+                    <p>指定車型享有：<br>
+                        >超低頭款</br>
+                        >59+1 期低月付附尾款財務方案</br>
+                        >五年原廠保固</p>
+                    <br>
+                    <br>
+                    <a href="#">預約試駕 ></a>
+                </div>
+                <div class="img-info col-12 col-md-4">
+                    <img src="./image/Q3 Sportback.jpg" alt="">
+                    <h2>Q3 Sportback</h2>
+                    <p>指定車型享有：</br>
+                        >超低頭款</br>
+                        >59+1 期低月付附尾款財務方案</br>
+                        >五年原廠保固</p>
+                    <br>
+                    <br>
+                    <a href="#">預約試駕 ></a>
+                </div>
+                <div class="img-info col-12 col-md-4">
+                    <img src="./image/A7 Sportback.jpg" alt="">
+                    <h2>A7 Sportback</h2>
+                    <p>指定車型享有：</br>
+                        >超低頭款、低利率月付</br>
+                        >零利率月付 (限既有 Audi 車主享有)</br>
+                        >首年乙式險 (限既有 Audi 車主享有)</br>
+                        >五年原廠保固</p>
+                    <br>
+                    <a href="#">預約試駕 ></a>
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="img-info col-12 col-md-4">
+                    <img src="./image/A4 Avant.jpg" alt="">
+                    <h2>A4 Avant</h2>
+                    <p>指定車型享有：</br>
+                        >超低頭款</br>
+                        >59+1 期低月付附尾款財務方案</br>
+                        >五年原廠保固</p>
+                    <br>
+                    <br>
+                    <a href="#">預約試駕 ></a>
+                </div>
+                <div class="img-info col-12 col-md-4">
+                    <img src="./image/A4 Sedan.jpg" alt="">
+                    <h2>A4 Sedan</h2>
+                    <p>指定車型享有：</br>
+                        >超低頭款</br>
+                        >59+1 期低月付附尾款財務方案</br>
+                        >五年原廠保固</p>
+                    <br>
+                    <br>
+                    <a href="#">預約試駕 ></a>
+                </div>
+                <div class="img-info col-12 col-md-4">
+                    <img src="./image/A5 Sportback.jpg" alt="">
+                    <h2>A5 Sportback</h2>
+                    <p>指定車型享有：</br>
+                        >超低頭款、低利率月付</br>
+                        >零利率月付 (限既有 Audi 車主享有)</br>
+                        >首年乙式險 (限既有 Audi 車主享有)</br>
+                        >五年原廠保固</p>
+                    <br>
+                    <a href="#">預約試駕 ></a>
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="img-info col-12 col-md-4">
+                    <img src="./image/Q5.jpg" alt="">
+                    <h2>Q5</h2>
+                    <p>指定車型享有：</br>
+                        >超低頭款</br>
+                        >59+1 期低月付附尾款財務方案</br>
+                        >五年原廠保固</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="#">預約試駕 ></a>
+                </div>
+                <div class="img-info col-12 col-md-4">
+                    <img src="./image/SQ5.jpg" alt="">
+                    <h2>SQ5</h2>
+                    <p>指定車型享有：</br>
+                        >超低頭款</br>
+                        >零利率分期方案</br>
+                        >首年乙式險 (限既有 Audi 車主享有)</br>
+                        >前59 + 1 期低月付附尾款財務方案</br>
+                        (僅限 20 年式)</br>
+                        >五年原廠保固</p>
+                    <br>
+                    <br>
+                    <a href="#">預約試駕 ></a>
+                </div>
+                <div class="img-info col-12 col-md-4">
+                    <img src="./image/S3 Sportback.jpg" alt="">
+                    <h2>S3 Sportback</h2>
+                    <p>指定車型享有：</br>
+                        >6年低月付附尾款財務方案</br>
+                        >第6年延長保固 (限既有 Audi 車主享有)</br>
+                        >五年原廠保固</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="#">預約試駕 ></a>
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="img-info col-12 col-md-4">
+                    <img src="./image/A6 Avant TFSI.jpg" alt="">
+                    <h2>A6 Avant TFSI</h2>
+                    <p>>555+1 即刻入主方案：</br>
+                        >適用於 2019 年生產 20 年式之 A6 Avant TFSI 車型</br>
+                        >5 年 180 萬 60 期 0 利率</br>
+                        >5 年 5 萬公里免費保養</br>
+                        >首年乙式險</br>
+                        >五年原廠保固</p>
+                    <br>
+                    <a href="#">預約試駕 ></a>
+                </div>
+                <div class="img-info col-12 col-md-4">
+                    <img src="./image/A6 Avant TDI.jpg" alt="">
+                    <h2>A6 Avant TDI</h2>
+                    <p>>555+1 即刻入主方案：<br>
+                        >適用於 2019 年生產 20 年式之 A6 Avant TDI 車型<br>
+                        >5 年 180 萬 60 期 0 利率<br>
+                        >5 年 5 萬公里免費保養<br>
+                        >首年乙式險<br>
+                        >五年原廠保固</p>
+                    <br>
+                    <a href="#">預約試駕 ></a>
+                </div>
+                <div class="img-info col-12 col-md-4">
+                    <img src="./image/A6 Sedan TDI.jpg" alt="">
+                    <h2>A6 Sedan TDI</h2>
+                    <p>555+1 即刻入主方案：</br>
+                        >適用於 2019 年生產 20 年式之 A6 Sedan TDI 車型</br>
+                        >5 年 180 萬 60 期 0 利率</br>
+                        >5 年 5 萬公里免費保養</br>
+                        >首年乙式險</br>
+                        >五年原廠保固</p>
+                    <br>
+                    <a href="#">預約試駕 ></a>
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="img-info col-12 col-md-4">
+                    <img src="./image/A8.jpg" alt="">
+                    <h2>A8</h2>
+                    <p>>指定車型享有「創局禮遇專案」：</br>
+                        >頭款半價立即入主</br>
+                        >二年分期零付款零利率</br>
+                        >既有車主享首年乙式險</br>
+                        >五年原廠保固</br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="#">預約試駕 ></a>
+                </div>
+                <div class="img-info col-12 col-md-4">
+                    <img src="./image/A8.jpg" alt="">
+                    <h2>A8</h2>
+                    <p>指定車型享有：</br>
+                        >超低頭款、低利率月付</br>
+                        >零利率月付 (限既有 Audi 車主享有)</br>
+                        >首年乙式險 (限既有 Audi 車主享有)</br>
+                        >五年原廠保固</p>
+                    <br>
+                    <br>
+                    <a href="#">預約試駕 ></a>
+                </div>
+                <div class="img-info col-12 col-md-4">
+                    <img src="./image/Q7.jpg" alt="">
+                    <h2>Q7</h2>
+                    <p>>指定車型享有：</br>
+                        >超低頭款</br>
+                        >零利率分期方案</br>
+                        >首年乙式險 (限既有 Audi 車主享有)</br>
+                        >五年原廠保固</br>
+                        >S line 進化版同享購車方案</br>
+                        <br>
+                        <br>
+                        <a href="#">預約試駕 ></a>
+                </div>
+            </div>
+            <div class="article-info">
+                <h1>Audi財務服務</h1>
+                <h3>關於Audi Financial Services</h3>
+                <p style="font-size:70%;">Audi Financial Services，為Audi & Volkswagen
+                    Group成員之一。自2002年在台成立以來，始終承繼全球汽車金融的專業背景，致力於為台灣廣大汽車消費者，提供優質且量身訂做的車輛分期付款、租賃等高品質服務，為每一位熱愛奧迪汽車的車主，輕鬆實踐駕馭夢想。
+                </p>
+                <p>註：Audi Financial Services為Volkswagen Financial Services AG之Trademark®</p>
+                <br>
+                <br>
+                <h3>關於Volkswagen Financial Services AG</h3>
+                <p>Volkswagen Financial Services
+                    AG，福斯汽車金融服務股份有限公司，是歐洲最大的汽車金融服務公司，60多年來，一直為客戶提供可靠而值得信賴的服務，其業務遍及歐洲、美洲及亞太等地達51個國家及地區。</p>
+            </div>
+            <div class="article-info">
+                <h3>服務三大特點</h3>
+                <p>1.服務優先 手續簡便<br>
+                    Audi Financial Services為Audi Volkswagen Taiwan成員之一；豐富的全球汽車金融經驗，專業的汽車金融團隊，提供消費者更簡便快速的服務。</p>
+                <p>2.量身打造 超值方案<br>
+                    針對Audi汽車豐富的產品線，開發適合不同價位與消費者屬性的購車計劃，提供最符合車主需求的多元優惠購車方案。</p>
+                <p>3.尊榮租賃 聰明享受<br>
+                    提供彈性靈活的租賃服務為個人和企業客戶打造更聰明的駕馭方案、更超值的服務。</p>
+            </div>
+            <div class="article-info">
+                <h3>快速便捷 實現夢想7步驟</h3>
+                <p>Step1.確認車型與付款條件</br><br>
+                    Step2.提供分期付款申請文件及簽署「蒐集個人資料告知事項暨同意書」</br><br>
+                    Step3.資料審查與電訪</br><br>
+                    Step4.簽署分期貸款知對保資料</br><br>
+                    Step5.簽署合約並繳付頭期款<br><br>
+                    Step6.領牌並開著您的專屬Audi回家<br><br>
+                    Step7.每月按期輕鬆付款
+                </p>
+            </div>
+            <div class="article-info">
+                <h3>Audi Financial Services 聯絡資訊</h3>
+                <p>台灣福斯財務服務股份有限公司<br>
+                    地址: 11073台北市信義區松高路1號16樓<br>
+                    電話: 02-8780-5898<br>
+                    傳真: 02-8780-5600</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-TextRange container">
+                <div class="footer-link">
+                    <p><a href="#">快速連結</a></p>
+                    <p><a href="#">服務專線與道路支援</a></p>
+                    <p><a href="#">柴油引擎資訊</a></p>
+                    <p><a href="#">與我聯繫</a></p>
+                    <p><a href="#">訂閱電子報</a></p>
+                </div>
+                <div class="footer-link">
+                    <p><a href="#">最新資訊</a></p>
+                    <p><a href="#">最新優惠</a></p>
+                    <p><a href="#">購車方案</a></p>
+                    <p><a href="#">新聞中心</a></p>
+                    <p><a href="#">Audi電子報</a></p>
+                    <p><a href="#">最新活動</a></p>
+                </div>
+                <div class="footer-link">
+                    <p><a href="#">Audi服務</a></p>
+                    <p><a href="#">Audi全新啟動</a></p>
+                    <p><a href="#">Audi原廠零件、配件與精品</a></p>
+                    <p><a href="#">服務體驗</a></p>
+                    <p><a href="#">服務項目</a></p>
+                    <p><a href="#">總裁信箱</a></p>
+                </div>
+                <div class="footer-link">
+                    <p><a href="#">探索Audi</a></p>
+                    <p><a href="#">Audi純電科技</a></p>
+                    <p><a href="#">Audi Innovation Award</a></p>
+                    <p><a href="#">Audi Stream</a></p>
+                    <p><a href="#">Audi Technology</a></p>
+                    <p><a href="#">Audi Destination</a></p>
+                    <p><a href="#">Audi People</a></p>
+                    <p><a href="#">Audi 雜誌</a></p>
+                    <p><a href="#">Audi Sport</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end">
+            <div class="footer-end-range container">
+                <div class="row align-items-center py-2">
+                    <div class="footer-end-left col-12 col-lg-9">
+                        <a href="#">Audi worldwide</a>
+                        <a href="#">Audi TV</a>
+                        <a href="#">與我聯繫</a>
+                        <a href="#">聲明事項</a>
+                    </div>
+                    <div class="footer-end-social pl-3 ml-sm-auto pr-sm-4">
+                        <a href="#" class="footer-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="footer-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-end-copyright container">
+                <P>© 2020 AUDI AG. All rights reserved</P>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
